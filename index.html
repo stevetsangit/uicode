@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html>
 <style>
-body{
-	width: 375px;
-	margin: 0 auto;
-	background: #f5f5f5;
-	font-size: 14px;
-}
+	body{
+		width: 375px;
+		margin: 0 auto;
+		background: #f5f5f5;
+		font-size: 14px;
+		font-family: SF Pro Display, PingFang SC,Lantinghei SC,Helvetica Neue,Helvetica,Arial,Microsoft YaHei;
+		font-weight: 400;
+	}
 
-.headImg{
-	background: #333;
-	height: 300px;
-	width: 375px;
-	text-align: center;
-	overflow: hidden;
-	color: #fff;
-}
+	.headImg{
+		background: #333;
+		height: 300px;
+		width: 375px;
+		text-align: center;
+		overflow: hidden;
+		color: #fff;
+	}
 
-.name{
-	font-size: 24px;
-	font-weight: bold;
-	padding: 10px 0px 5px 0px;
-}
+	.info{
+		padding:20px 20px 25px 20px;
+		background: #FFF;
+		height: 64px;
+	}
+
+	.infoLeft{
+		float: left;
+		width: 250px;
+		margin: 0 auto;
+		padding: 10px 0 10px 0;
+		overflow: hidden;
+	}
+
+	.name{
+		font-size: 24px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis; 
+		color: rgba(0,0,0,0.8)
+	}
+
+	.position{
+		color: gray;
+	}
+
+	.avatar{
+		float: right;
+		margin: 0 auto;
+		padding: 0 auto;
+	}
+
+	.avatar img{
+		width: 64px;
+		height: 64px;
+		border-radius:100%；
+		border-radius: 50%; /* relative value */   
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		transition: linear 0.25s;
+	}
+
 
 </style>
 
 <body>
 
-<div class="headImg"><img src="headimg.png" width="375" height="300"></div>
-<div class="info">
-	<div class="name">Name</div>
-	<div class="position">Position</div>
-	<div class="avatar">Avatar</div>
-</div>
+	<div class="headImg">
+		<img src="headimg.png" width="375" height="300">
+	</div>
+	<div class="info">
+		<div class="infoLeft">
+			<div class="name">Steve Tsang</div>
+			<div class="position">Position</div>
+		</div>
+		<div class="avatar">
+			<img src="avatar.png">
+		</div>
+	</div>
 
 </body>
 </html>
