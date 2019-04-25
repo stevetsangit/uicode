@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--适配移动显示-->
 <head>
 	<title>UICode</title>
-	<meta name="viewport" content="width=device-width, viewport-fit=cover">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover"> <!--适配iPhone底部条-->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+<style>
+	.tab2, .tab3{
+		opacity:0.3;
+	}
+</style>
+
 <body>
 
+<!--第一部份内容-->
 	<div class="headImg">
 		<img src="headimg.png" width="375" height="300">
 	</div>
@@ -27,11 +34,14 @@
 			<a class="HireMeText" href="https://github.com/stevezeng/uicode">打个响指</a>
 		</div>
 	</div>
-	
+
+<!--第二部份内容-->
 	<div class="part2">复联已终。</div>
 
+<!--Tab Bar-->
 	<div class="tabbar">
-		<div class="tab1" onclick="window.open('index.html','_self')">
+		<!--<object style="border:0px" type="text/x-scriptlet" data="tabbar.html" width=100% height=50></object>-->
+		<div class="tab1">
 			<img src="icons/home.svg">
 			<a>Home</a>
 		</div>

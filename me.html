@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--适配移动显示-->
+<head>
+	<title>Discover</title>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover"> <!--适配iPhone底部条-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+    .tab1, .tab2{
+        opacity:0.3;
+    }
+</style>
+
+<body>
+
+<!--第一部份内容-->
+    <div class="me">About Me</div>
+
+<!--Tab Bar-->
+<div class="tabbar">
+		<!--<object style="border:0px" type="text/x-scriptlet" data="tabbar.html" width=100% height=50></object>-->
+		<div class="tab1" onclick="window.open('index.html','_self')">
+			<img src="icons/home.svg">
+			<a>Home</a>
+		</div>
+		<div class="tab2" onclick="window.open('discover.html','_self')">
+			<img src="icons/discover.svg">
+			<a>Discover</a>
+		</div>
+		<div class="tab3">
+			<img src="icons/me.svg">
+			<a>Me</a>
+		</div>
+	</div>
+    
+</body>
+</html>
