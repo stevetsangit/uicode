@@ -128,14 +128,11 @@
 		box-shadow: 0px -1px 2px rgb(0,0,0, .05);
 		margin: 0 0px;
 		padding:6px 0px 0px 0px;
-		height: 50px;
-		height: constant(safe-area-inset-bottom);
-		height: env(safe-area-inset-bottom);
+		height: calc(50px + constant(safe-area-inset-bottom));
+		height: calc(50px + env(safe-area-inset-bottom));
 		left: 0;
 		position: fixed;
 		bottom: 0;
-		padding-bottom: constant(safe-area-inset-bottom);
-		padding-bottom: env(safe-area-inset-bottom);
 	} 
 
 	.tab1, .tab2, .tab3{
