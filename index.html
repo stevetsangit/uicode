@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <head>
 	<title>UICode</title>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover">
 </head>
 
 <style>
@@ -10,6 +11,8 @@
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 auto;
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
 		background: #eee;
 		font-size: 14px;
 		font-family: -apple-system, BlinkMacSystemFont, "PingFang SC","Helvetica Neue",STHeiti,"Microsoft Yahei",Tahoma,Simsun,sans-serif;
@@ -130,6 +133,8 @@
 		left: 0;
 		position: fixed;
 		bottom: 0;
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
 	} 
 
 	.tab1, .tab2, .tab3{
