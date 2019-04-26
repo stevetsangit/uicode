@@ -110,8 +110,8 @@
 		border: none;
     	border-radius: 4px;
     	color: rgb(255, 255, 255);
-		display: inline-block;
-		outline:none;
+		display: inline-block; /* 去除外边框效果 1 */
+		outline:none; /* 去除外边框效果 2 */
     	font-size: 16px;
 		font-weight: 400;
 		width: 100%;
